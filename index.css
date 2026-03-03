@@ -1,0 +1,89 @@
+body {
+            background: rgb(86, 1, 86);
+            height: 100vh;
+            margin: 0;
+            
+        }
+
+        .centralize {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading {
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loading label {
+            font-size: 45px;
+        }
+
+        label {
+            font-size: x-large;
+            color: white;
+        }
+
+        form {
+            width: 400px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: -webkit-fill-available;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button:active {
+            opacity: 0.8;
+        }
+
+        button[disabled] {
+            opacity: 0.7;
+        }
+
+        .error {
+            color: white;
+            background-color: red;
+            display: none;
+        }
+
+        .clear {
+            background: transparent;
+            border: none;
+            color: white;
+        }
+
+        .solid {
+            background: white;
+            border: none;
+            color: rgb(45, 211, 211);
+        }
+
+        .outline {
+            background: transparent;
+            color: white;
+            border: 1px, solid white;
+        }
+
+@media (max-width: 500px){
+    form{
+        width: 90%;
+    }
+
+    input, button{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    label{
+        font-size: large;
+    }
+}

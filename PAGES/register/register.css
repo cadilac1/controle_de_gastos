@@ -1,0 +1,11 @@
+        form {
+            width: 400px;
+        }
+
+        input {
+            border: none;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }

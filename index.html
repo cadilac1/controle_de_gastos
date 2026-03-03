@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Controle de Gastos</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body class="centralize">
+    <form>
+        <div>
+            <div><label for="email">E-mail</label></div>
+            <input type="email" name="email" id="email" onchange="OnChangeEmail()" required placeholder="seuemail@.com">
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+        </div>
+        <div>
+            <div><label for="password">Senha</label></div>
+            <input type="password" name="password" id="password" onchange="OnChangePassword()" required placeholder="senha:">
+            <div class="error" id="password-required-error">Senha é obrigatório</div>
+        </div>
+        <div>
+            <button type="button" class="clear" id="recuperar-senha" onclick="recoverPassword()" disabled="true">Recuperar Senha</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="logar-conta" onclick="login()" disabled="true">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="outline" onclick="register()">Registrar</button>
+        </div>
+    </form>
+</body>
+
+
+<script type="module" src="index.js"></script> 
+<script type="module" src="validations.js"></script>
+<script type="module" src="loading.js"></script>
+
+
+
+</html>
